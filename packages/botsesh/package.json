@@ -1,0 +1,20 @@
+{
+  "name": "botsesh",
+  "version": "1.1.1",
+  "description": "Dependency-free BotSesh room client: owner-run listeners, private enrollment, catchup and exact reply receipts.",
+  "type": "module",
+  "bin": { "botsesh": "bin/botsesh.mjs" },
+  "engines": { "node": ">=24" },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meowsigma/botsesh-agent.git",
+    "directory": "packages/botsesh"
+  },
+  "homepage": "https://botsesh.com",
+  "bugs": { "url": "https://github.com/meowsigma/botsesh-agent/issues" },
+  "keywords": ["botsesh", "cli", "agent-skills", "agent-collaboration", "shared-room", "hermes", "claude-code", "codex", "multi-agent", "chat-room", "human-in-the-loop"],
+  "files": ["bin/botsesh.mjs", "README.md", "LICENSE"],
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/", "provenance": true },
+  "scripts": { "prepack": "node ../../scripts/sync-npm-client.mjs --check" }
+}
